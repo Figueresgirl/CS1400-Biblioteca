@@ -1,9 +1,14 @@
 import math
 
+def es_cuadrado_perfecto(n):
+    if n < 0:
+        return False
+    return math.isqrt(n) ** 2 == n
+
+
 # Crear una función para verificar si un número es un cuadrado perfecto
 # Completar las 3 tareas especificadas con TODO
 
-def es_cuadrado_perfecto(n):
     # TODO 1: Si el número es negativo, no puede ser un cuadrado perfecto. 
     # Asi que utiliza if para ver si n es menos que 0,
     # si lo es que devuelva un Falso para nuestro Booleano
@@ -14,7 +19,7 @@ def es_cuadrado_perfecto(n):
 
     # Verificar si la raíz al cuadrado es igual al número original
     #return raiz_entera * raiz_entera == n
-    return math.isqrt(n) ** 2 == n
+
 
 # Entrada del usuario
 num_usuario = int(input("¿Qué número te gustaría revisar si es cuadrado perfecto? "))
@@ -22,11 +27,8 @@ num_usuario = int(input("¿Qué número te gustaría revisar si es cuadrado perf
 # Mostrar el resultado
 if es_cuadrado_perfecto(num_usuario):
     print(f" El número {num_usuario} es un cuadrado perfecto.")
-else:
     #TODO 2: Dar un mensaje al usuario si NO es cuadrado perfecto. 
     
-
-
 # TODO 3: Puedes encontrar el error en el siguiente codigo? Quita los simbolos # para probar el codigo linea por linea.
 
 # Este codigo prueba si es cuadrado perfecto de una vez con una lista de valores
@@ -36,3 +38,38 @@ else:
 #    resultado = es_cuadrado_perfecto(num)
 #    estado = "✅" if resultado else "❌"
 #    print(f"{estado} {num} {'es' if resultado else 'NO es'} un cuadrado perfecto.")
+
+#Errores encontrados
+
+#La función es_cuadrado_perfecto(n) estaba incompleta
+
+#No tenía indentación correcta ni el if n < 0: return False.
+
+#se uso n antes de definirlo
+
+#Teníamos: raiz_entera = int(n ** 0.5) pero n todavía no existía ahí.
+
+#Había ejemplos mezclados dentro del código real
+
+#otro error es que math.isqrt(n) da error si n < 0 , los negativos no estan definidos dentro de la funcion
+#la variable estado no existe
+
+#Una vez determinados los errores:
+# TODO 3: Pruebas automaticas con varios valores
+
+print("\nPruebas automáticas con varios valores:")
+test_valores = [0, 1, 4, 9, 16, 25, 26, 27, 100, 101, -1, -4]
+
+for num in test_valores:
+    print(f"{num} {'es' if es_cuadrado_perfecto(num) else 'NO es'} un cuadrado perfecto")
+
+
+
+#He aprendido que el programa ejecuta en este orden
+#1. Importa math (para usarlo en math.isqrt ).
+#2. Luego define la funcion que en este caso es es_cuadrado_perfecto (n):
+# donde si n < 0 entonces es False
+# si no, calcula math.isqrt(n) y revisa si el cuadrado Vuelve a n.
+# pide el numero al usuario
+# imprime si es o no cuadrado perfecto
+# ejecuta una lista de pruebas automaticas.

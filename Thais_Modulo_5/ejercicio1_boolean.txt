@@ -1,0 +1,61 @@
+ejercicio1_boolean
+
+# Practicando lógica booleana en Python aprendiendo a usar "and", "or" y "not"
+
+# Declaracion de valores o inicialización de Valores para probar diferentes combinaciones
+edad = 16
+tiene_permiso = True
+es_finde = False
+
+# TODO 1: Usa una expresión booleana con "and"
+# Por ejemplo: ¿Puede salir hoy solo si tiene 18 años o más Y si tiene permiso?
+if edad >= 18 and tiene permiso:
+    print("Puede salir. ")
+else:
+    print("no puede salir. ")
+
+
+# TODO 2: Usa una expresión booleana con "or" para permitir salir si es fin de semana o tiene permiso
+if es_finde or tiene permiso
+    print("Puede salir si es fin de semana o tiene permiso. ")
+else:
+    print("Puede salir. ")
+
+
+# TODO 3: Usa una expresión booleana con "not" para negar una condición
+# Por ejemplo: De ninguna manera tiene permiso
+if not tiene_permiso
+    print("No tiene permiso. ")
+else:
+    print("Si tiene permiso. ")
+
+# TODO 5: Escribe tu propia condición con and, or o not e imprimelo a la pantalla.
+# Ejemplo: ¿Puede conducir si tiene 18 o más y tiene permiso? u cualquier otra idea.
+
+#Declaracion de valores
+puede_conducir_por_la_izquierda = True
+esta_en_Utah = False
+tiene_permiso = True
+
+#Uso de "and"
+#¿Puede conducir por la izquierda y tiene permiso? 
+
+if puede_conducir_por_la_izquierda and tiene_permiso:
+    print("puede_conducir por la izquierda.")
+else:
+    print("No puede conducir por la izquierda.")
+
+#Uso de "or"
+#esta_en_Utah o tiene_permiso
+if esta_en_Utah or tiene_permiso:
+     print("Puede conducir. ")
+else:
+     print("No puede conducir. ")
+
+#Uso de "not"
+#Si no puede conducir por la izquierda
+if not puede_conducir_por_la_izquierda:
+     print("Debe conducir por la derecha. ")
+else:
+     print("No debe conducir por la derecha. ") 
+
