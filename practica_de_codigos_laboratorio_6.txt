@@ -57,7 +57,7 @@ Perfecto 👍 Aquí tienes una versión MUY simple, pensada para nivel principia
 # Concatenación de cadenas (nivel principiante)
 
 # Bienvenida
-print("Bienvenido(a) al programa de entrevista 🎵")
+print("Bienvenido(a) al programa de entrevista ")
 
 # Pedir datos
 nombre = input("Escribe tu nombre: ")
@@ -71,9 +71,9 @@ nombre_completo = nombre + " " + apellido
 print("Tu nombre completo es " + nombre_completo)
 
 # Mensaje final usando concatenación
-print("Hola " + nombre + ", tu canción favorita es " + cancion + ". ¡Buena elección! 🎶")
+print("Hola " + nombre + ", tu canción favorita es " + cancion + ". ¡Buena elección! ")
 
-🧩 ¿Qué aprende el estudiante con este código?
+¿Qué se aprende con este código?
 
 Usar input() para recibir datos
 
@@ -83,7 +83,7 @@ Agregar espacios " " manualmente
 
 Mostrar resultados con print()
 
-🎯 Ideal para:
+Ideal para:
 
 Primer laboratorio de Python
 
