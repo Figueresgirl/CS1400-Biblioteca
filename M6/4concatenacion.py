@@ -14,15 +14,13 @@ print("Bienvenido(a) al programa de entrevista ")
 nombre = input("Escribe tu nombre: ")
 apellido = input("Escribe tu apellido: ")
 cancion = input("Escribe tu canción favorita: ")
+
 #Entrevista algun companero(a) para averiguar su cancion preferida y su nombrecompleto.
-
-
-
 # Una manera de validar entradas vacías
 # Toma en cuenta que cambios podrias realizar si tienen un segundo nombre, y/o un segundo apellido.
 # La meta es obtener su nombre completo.
 if not nombre.strip():
-    print("Por favor, escribe tu primer nombre.")
+    print("Por favor, escribe tu primer nombre.   ")
     exit()
 
 if not apellido.strip():
@@ -38,6 +36,9 @@ if not cancion.strip():
 nombre = nombre.strip().capitalize()
 apellido = apellido.strip().capitalize()
 cancion = cancion.strip().title()
+#Nuevas variables creo que no son necesarias porque cuando
+#escribo todo en minuscula el terminal muestra todo en mayuscula
+
 
 # TODO Tarea 3: Crear un variable llamado nombre_completo para juntar
 #  (concatenar) todos los nombres ingresados, usando los espacios adecuado.
@@ -45,15 +46,16 @@ nombre_completo = nombre + " " + apellido
 
 
 # TODO Tarea 4: Mostrar el resultado con alguna frase como por ejemplo, "Tu nombre completo es  ___ "
-print("Tu nombre completo es " + nombre_completo)
+print("Gracias, Tu nombre completo es " + nombre_completo )
+print("A mi tambien me gusta esa cancion     ")
 
 
 # TODO Tarea 5: Crear un ultimo variable, y agruegale más texto concatenado.
 # Puede ser un saludo, o un piropo que incluya el variable para la cancion.
 # Por ejemplo, "Hola ___, me encanta que tu cancion favorita sea ___! "
-mensaje = "Hola " + nombre + ", ¡me encanta que tu canción favorita sea \"" + cancion + "\"! "
+mensaje = "Cool " + nombre + ", ¡me encanta que tu canción favorita sea \"" + cancion + "\"! "
 
 # Puede ser un saludo, o un piropo que incluya el variable para la cancion.
 # Por ejemplo, "Hola ___, me encanta que tu cancion favorita sea ___! "
 # Imprimir a la terminal
-
+print(mensaje)
