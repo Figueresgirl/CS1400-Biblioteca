@@ -17,8 +17,13 @@
 # ------------------------------------------
 # Importaciones necesarias
 # ------------------------------------------
+#from turtle import make_turtle, forward, left
+import turtle
 
-from turtle import make_turtle, forward, left
+# 1. Iniciar ventana y objeto de tortuga
+ventana = turtle.Screen()
+t = turtle.Turtle() 
+t.speed(3)
 
 # ------------------------------------------
 # Paso 1: Crear la ventana y la tortuga
@@ -97,3 +102,4 @@ print("Dibujando un cuadrado con bucle...")
 # - Un triángulo tiene 3 lados.
 # - Un giro completo es 360 grados.
 # - ¿Cuánto debe girar en cada esquina?
+ventana.exitonclick()
