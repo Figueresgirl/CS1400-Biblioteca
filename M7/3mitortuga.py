@@ -17,8 +17,10 @@
 # ------------------------------------------
 # Importaciones necesarias
 # ------------------------------------------
-
+#from turtle import make_turtle, forward, left
 import turtle
+
+from turtle import make_turtle, forward, left
 
 # ------------------------------------------
 # Paso 1: Crear la ventana y la tortuga
@@ -124,9 +126,3 @@ for i in range(4):
 # - Un triángulo tiene 3 lados.
 # - Un giro completo es 360 grados.
 # - ¿Cuánto debe girar en cada esquina?
-
-print("Dibujando un triangulo con bucle...")
-
-for i in range(3):
-    t.forward(100)
-    t.left(120)
