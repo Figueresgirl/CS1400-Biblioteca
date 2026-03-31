@@ -1,7 +1,7 @@
 from weather_wizard.api import fetch_weather_from_provider
 from weather_wizard.utils import is_valid_city_name
 
-def get_weather_data(city_name: str):
+def obtener_clima_ciudad(city_name: str):
     if not is_valid_city_name(city_name):
         raise ValueError("Nombre de ciudad no válido.")
 

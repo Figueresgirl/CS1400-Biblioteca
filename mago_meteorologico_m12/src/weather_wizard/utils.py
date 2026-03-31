@@ -7,7 +7,7 @@ def celsius_to_fahrenheit(celsius: float) -> float:
     """Convierte una temperatura de grados Celsius a Fahrenheit."""
     return (celsius * 9/5) + 32
 
-def format_weather_report(data: dict) -> str:
+def formatear_respuesta(data: dict) -> str:
     """
     Toma un diccionario de datos climáticos y lo devuelve como
     una cadena de texto (string) elegante para la consola.
