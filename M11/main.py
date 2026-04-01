@@ -4,7 +4,7 @@ from markov_engine import construir_modelo, generar_texto
 
 def ejecutar_demo():
     # 1. Datos de entrada
-    texto_base = " "
+    texto_base = "Comenzar es, quizás, el acto más valiente que un ser humano puede realizar"
     
     # 2. Procesamiento (Usando utils.py)
     palabras = limpiar_y_tokenizar(texto_base)
@@ -13,8 +13,8 @@ def ejecutar_demo():
     modelo = construir_modelo(palabras)
     
     # 4. Generación
-    print("--- Generador de Texto Markov_engine ---")
-    resultado = generar_texto(modelo, "Comenzar es, quizás, el acto más valiente que un ser humano puede realiza", 5)
+    print("--- Generador de Texto Markov ---")
+    resultado = generar_texto(modelo, "Comenzar es, quizás, el acto más valiente que un ser humano puede realizar", 5)
     
     print(f"Resultado: {resultado}")
 
@@ -22,4 +22,3 @@ def ejecutar_demo():
 # Llama a ejecutar_demo() dentro de un bloque if __name__ == "__main__":
 if __name__ == "__main__":
     ejecutar_demo()
-
