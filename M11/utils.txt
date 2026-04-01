@@ -20,7 +20,7 @@ def limpiar_y_tokenizar(texto):
     
     return palabras
 
-resultado = limpiar_y_tokenizar("Comenzar es, quizás, el acto más valiente que un ser humano puede realizar.")
+resultado = limpiar_y_tokenizar("Comenzar es, quizás, el acto más valiente que un ser humano puede realizar")
 
 for palabras in resultado:
     print(palabras)
