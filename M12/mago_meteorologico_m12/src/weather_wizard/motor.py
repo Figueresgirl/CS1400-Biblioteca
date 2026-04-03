@@ -1,6 +1,5 @@
 import requests
 
-API_KEY = "29dc97f0657f40b7b4e20326260304"
 
 # Reemplazo de utils.py
 def is_valid_city_name(city_name):
