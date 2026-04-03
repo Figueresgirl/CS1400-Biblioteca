@@ -27,6 +27,7 @@ def formatear_respuesta(data: dict) -> str:
     
     return "\n".join(report)
 
+
 def is_valid_city_name(name: str) -> bool:
     """Verifica si el nombre de la ciudad tiene al menos 2 letras."""
     return len(name.strip()) >= 2
