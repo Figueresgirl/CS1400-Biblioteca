@@ -22,7 +22,7 @@ def fetch_weather_from_provider(city_name):
         return response.json()
 
     except requests.exceptions.ConnectionError:
-        return {"error": "❌ Sin conexión a internet o servidor bloqueado."}
+        return {"error": "Sin conexión a internet o servidor bloqueado."}
 
     except requests.exceptions.Timeout:
         return {"error": "⏱️ La API tardó demasiado en responder."}
