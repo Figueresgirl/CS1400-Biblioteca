@@ -3,7 +3,10 @@ Punto de entrada para la aplicación Weather Wizard.
 Organizado para la clase CS1400 - Universidad Weber.
 """
 
-from weather_wizard.motor import obtener_clima_ciudad
+try:
+    from weather_wizard.motor import obtener_clima_ciudad
+except ModuleNotFoundError:
+    from motor import obtener_clima_ciudad
 
 
 def main():
@@ -18,12 +21,14 @@ def main():
     try:
         resultado = obtener_clima_ciudad(ciudad)
 
-        # Manejo de error
+        if not isinstance(resultado, dict):
+            print("Ocurrió un error: respuesta inválida.")
+            return
+
         if "error" in resultado:
             print(f"Ocurrió un error: {resultado['error']}")
             return
 
-        # Extracción segura de datos
         ciudad_res = resultado.get("city", "N/A")
         temp = resultado.get("temp", "N/A")
         condicion = resultado.get("condition", "N/A")
