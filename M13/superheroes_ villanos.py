@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 Lógica del juego:
 Primero se crean dos jugadores: el héroe y el villano. Cada uno comienza con 100 puntos de vida y fuerza inicial de 0. 
