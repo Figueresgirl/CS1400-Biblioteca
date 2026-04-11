@@ -27,6 +27,7 @@ Puntos de vida
 El programa utiliza programación orientada a objetos creando una clase Player con atributos de vida y fuerza.
  En cada turno, ambos jugadores generan una fuerza aleatoria, se comparan, y el que pierde recibe daño basado en la diferencia de fuerza.
  El juego continúa hasta que uno pierde todos sus puntos de vida o el usuario decide salir.
+
 import random
 
 class Player:
