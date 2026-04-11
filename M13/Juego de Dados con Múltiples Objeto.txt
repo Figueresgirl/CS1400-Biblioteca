@@ -1,3 +1,10 @@
+
+
+Toda la tarea se puede ver aqui
+https://github.com/Figueresgirl/CS1400-Biblioteca/tree/main/M13
+
+
+
 Juego de Dados con Múltiples Objetos
 Lo siguiente demostrará el uso de múltiples objetos utilizando un Juego de Dados. Este es un juego simple donde se lanzan dos dados y el jugador con el resultado más alto obtiene un punto. El código del juego se encuentra abajo. Nota: el programa fallará en este punto si intentas ejecutarlo.
 
@@ -124,3 +131,67 @@ Este programa simula un juego de dados entre dos jugadores usando programación 
 La clase Player almacena la puntuación y el resultado de cada lanzamiento. 
 El método roll() genera dos números aleatorios entre 1 y 6 y guarda su suma, addToScore() incrementa la puntuación del jugador, y __str__() permite mostrar la puntuación de manera legible.
  En la función main(), se crean dos jugadores, se ejecutan rondas hasta que el usuario escribe "quit", y al final se determina quién ganó según la puntuación más alta.
+
+Examina el siguiente código:
+1. ¿Cuál es el nombre de la clase utilizada en la siguiente sección principal?
+RESPUESTA: BaseballPlayer
+
+2. ¿Qué variables se establecen en el método init?
+RESPUESTA: Las variables son name, number y batting_avg.
+
+3. ¿Qué dos métodos de instancia hay en la clase BaseballPlayer?
+RESPUESTA: print_info() y calculate_batting_avg().
+
+4. Añade otra instancia para un segundo jugador.
+RESPUESTA: Añade otra instancia para un segundo jugador.
+player2 = BaseballPlayer()
+player2.name = "Thais"
+player2.number = 15
+player2.batting_avg = 0.0
+
+5. Añade el código necesario para utilizar el método calculate_batting_avg e imprimir el promedio del jugador 1.
+PEGA EL CÓDIGO ACTUALIZADO AQUÍ
+class BaseballPlayer:
+    def __init__(self):
+        self.name = "none"
+        self.number = "none"
+        self.batting_avg = 0.0
+
+    def print_info(self):
+        print("Nombre: " + self.name)
+        print("Número: " + str(self.number))
+        print("Promedio de bateo: " + str(self.batting_avg))
+
+    # Método para calcular el promedio de bateo
+    def calculate_batting_avg(self, hits, at_bats):
+        if at_bats > 0:
+            self.batting_avg = hits / at_bats
+        else:
+            self.batting_avg = 0.0
+
+def main():
+    # Jugador 1
+    player1 = BaseballPlayer()
+    player1.name = "Juan"
+    player1.number = 10
+
+    # Jugador 2 (segunda instancia)
+    player2 = BaseballPlayer()
+    player2.name = "Thais"
+    player2.number = 25
+
+    # Calcular promedio del jugador 1
+    player1.calculate_batting_avg(30, 100)
+
+    # Imprimir promedio del jugador 1
+    print("Promedio de bateo del jugador 1:", player1.batting_avg)
+
+    print("\nInformación completa del jugador 1:")
+    player1.print_info()
+
+    print("\nInformación del jugador 2:")
+    player2.print_info()
+
+
+if __name__ == "__main__":
+    main()
