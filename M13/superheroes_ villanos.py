@@ -17,8 +17,8 @@ class Player:
 
 
 def main():
-    hero = Player("Spidey")
-    villain = Player("Doc Oct")
+    hero = Player("Taisa")
+    villain = Player("Doc April")
 
     while hero.life_points > 0 and villain.life_points > 0:
         print("\nPuntos de vida de", hero.name + ":", hero.life_points)
