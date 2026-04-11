@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-"""
-Lógica del juego:
-Primero se crean dos jugadores: el héroe y el villano. Cada uno comienza con 100 puntos de vida y fuerza inicial de 0. 
-Cuando el usuario presiona 'h', ambos jugadores generan una fuerza aleatoria entre 1 y 20.
-
-Luego se comparan las fuerzas. El jugador con menor fuerza pierde puntos de vida según la diferencia entre ambas fuerzas. 
-Si ambos tienen la misma fuerza, nadie recibe daño.
-
-El juego termina cuando uno de los jugadores llega a 0 puntos de vida o cuando el usuario escribe 'q'.
-
-El programa utiliza programación orientada a objetos con una clase Player. 
-Cada jugador tiene nombre, puntos de vida y fuerza. 
-El método setStrength() genera una fuerza aleatoria y receiveDamage() resta puntos de vida.
-"""
 
 import random
 
