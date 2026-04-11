@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """
 Lógica del juego
 Primero se crean dos jugadores, el héroe y el villano. Cada uno empieza con 100 puntos de vida y fuerza 0. Cuando el usuario presiona 'h', ambos jugadores generan una fuerza aleatoria entre 1 y 20. 
